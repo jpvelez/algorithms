@@ -2,14 +2,14 @@ import java.lang.Math;
 
 public class LogFinder
 {
-	/* Compute factorial of a given integer. */
+	// Compute factorial of a given integer. 
 	public static double factorial(int N)
 	{
 		if (N==1) return 1;
 		return N * factorial(N-1);
 	}
 
-	/* Approximate natural logarithm of given double. */
+	// Approximate natural logarithm of given double.
 	public static double ln(double X)
 	{
 		int N = 0;
@@ -25,7 +25,7 @@ public class LogFinder
 		return N;
 	}
 
-	/* Find the natural log of the factorial of user-provided integers */
+	// Find the natural log of the factorial of user-provided integers.
 	public static void main(String[] args)
 	{
 		int input = Integer.parseInt(args[0]);
@@ -33,7 +33,7 @@ public class LogFinder
 		StdOut.println(output - 1 + " <= ln(" + input + "!) <= " + output);
 	}
 
-	/* Find integer above which a double is required to represent int! */
+	// Find integer above which a double is required to represent int!
 	public static void find_overflow_factorial(String[] args)
 	{
 		int N = 1;
