@@ -5,7 +5,7 @@ public class BinarySearch
 	public static int rank(int key, int[] a)
 	{
 		// Array must be sorted.
-		int lo = a[0];
+		int lo = 0;
 		int hi = a.length - 1;
 		while (lo <= hi)
 		{
