@@ -27,7 +27,13 @@ public class BinarySearch
 		{	// Read key, print if not in whitelist.
 			int key = StdIn.readInt();
 			if (rank(key, whitelist) == -1)
-				StdOut.println(key);
+			{	// User specifies whether to print keys on whitelist or off.
+				if (args[1].equals("-")) StdOut.println(key);
+			}
+			else
+			{
+				if (args[1].equals("+")) StdOut.println(key);
+			}
 		}
 	}
 }
