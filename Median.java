@@ -19,7 +19,7 @@ public class Median
 	public static void main(String[] args)
 	{
 		In in = new In(args[0]);
-		double[] doubles = in.readAllDoubles();
+		double[] doubles = in.readAllDoubles();	// Breaks on largish datasets.
 
 		Arrays.sort(doubles); // Replace for custom sorting algorithm.
 		double median = findMedian(doubles);
