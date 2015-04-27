@@ -1,13 +1,12 @@
 public class FixedCapacityStackOfStrings
 { // Use fixed sized string array to represent stack data.
-  private String[] a; // need to import this?
+  private String[] a;
   private int N;
-
+  
   FixedCapacityStackOfStrings(int cap)
   {
     a = new String[cap];
   }
-
   public void push(String s)
   {
     a[N] = s;
